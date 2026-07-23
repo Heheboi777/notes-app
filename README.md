@@ -39,22 +39,22 @@ Completed as a pre-task for the **Full Stack Web Developer Intern** position at 
 
 ### 1. Clone the repository
 ```bash```
-git clone https://github.com/Heheboi777/notes-app.git
-cd notes-app
+- git clone https://github.com/Heheboi777/notes-app.git
+- cd notes-app
 
 ### 2. Backend Setup
 
-cd backend
-npm install
-node app.js
+- cd backend
+- npm install
+- node app.js
 
 Server runs on http://localhost:3000
 
 ### 3. Frontend Setup
 
-cd frontend
-npm install
-npm run dev
+- cd frontend
+- npm install
+- npm run dev
 
 App runs on http://localhost:5173
 
@@ -110,7 +110,7 @@ Reason: better-sqlite3 is more compatible with Railway's Linux environment and a
 
 ### Future Improvements
 
-Add user authentication (login/register)
+- Add user authentication (login/register)
 
 - Search / filter notes
 
