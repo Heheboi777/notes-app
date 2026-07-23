@@ -1,38 +1,123 @@
-# frontend
+# Notes App – Full Stack CRUD Application
 
-This template should help get you started developing with Vue 3 in Vite.
+A simple note management system built with Vue.js, Express, and SQLite.  
+Completed as a pre-task for the **Full Stack Web Developer Intern** position at **SuDu AI**.
 
-## Recommended IDE Setup
+---
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Live URLs
 
-## Recommended Browser Setup
+- **Frontend (Vercel)**: https://notes-app-green-phi.vercel.app/
+- **Backend (Railway)**: https://notes-app-production-b54e.up.railway.app/api/notes
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+---
 
-## Customize configuration
+## Tech Stack
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+| Layer       | Technology                            |
+|-------------|-------------------------------------  |
+| Frontend    | Vue 3 + Vite + Axios                  |
+| Backend     | Node.js + Express                     |
+| Database    | SQLite (better-sqlite3)               |
+| Deployment  | Vercel (frontend) + Railway (backend) |
 
-## Project Setup
+---
 
-```sh
+## Features
+
+- Create, Read, Update, Delete notes  
+- All data persisted in SQLite database  
+- Responsive UI with basic styling  
+
+---
+
+## How to Run Locally
+
+### Prerequisites
+- Node.js (v18 or higher)  
+- npm (comes with Node.js)
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/Heheboi777/notes-app.git
+cd notes-app
+
+### 2. Backend Setup
+
+cd backend
 npm install
-```
+node app.js
 
-### Compile and Hot-Reload for Development
+Server runs on http://localhost:3000
 
-```sh
+### 3. Frontend Setup
+
+cd frontend
+npm install
 npm run dev
-```
 
-### Compile and Minify for Production
+App runs on http://localhost:5173
 
-```sh
-npm run build
-```
+### 4. Open the App 
+
+Visit http://localhost:5173 in your browser.
+
+Add, edit, or delete notes – all changes will be saved to the local SQLite database.
+
+### AI Usage Examples (as required by the task)
+
+Example 1 – Express CRUD routes
+
+Prompt: “Write Express.js routes for a notes CRUD API with SQLite.”
+
+AI output: Basic route skeletons with SQLite queries.
+
+My modification: Added 404 handling, input validation, and proper status codes.
+
+Reason: To meet RESTful conventions and provide clear feedback.
+
+---
+
+Example 2 – Vue.js form with Axios
+
+Prompt: “Create a Vue 3 component with a form and a list, using axios for API calls.”
+
+AI output: Template with v-model and axios calls.
+
+My modification: Added async/await with try‑catch blocks, real‑time UI updates after each action.
+
+Reason: To handle network errors gracefully and improve user experience.
+
+---
+
+Example 3 – SQLite deployment issue on Railway
+
+Prompt: “sqlite3 invalid ELF header error on Railway deployment.”
+
+AI output: Suggested switching from sqlite3 to better-sqlite3.
+
+My modification: Replaced the driver in package.json and updated app.js syntax accordingly.
+
+Reason: better-sqlite3 is more compatible with Railway's Linux environment and avoids compilation failures.
+
+### Challenges Faced
+
+1. SQLite native compilation on Railway → fixed by using better-sqlite3.
+
+2. Vercel deployment path – selected only frontend as the root directory, backend remains on Railway.
+
+3. Windows firewall initially blocked Node.js → allowed it through Defender Firewall.
+
+### Future Improvements
+
+Add user authentication (login/register)
+
+- Search / filter notes
+
+- Tag/category support
+
+- Move to a production database (PostgreSQL)
+
+**Author**: Teoh Lip Sure – Full Stack Web Developer Intern Candidate  
+**Submission Date**: 23 July 2026  
+**Company**: SuDu AI
