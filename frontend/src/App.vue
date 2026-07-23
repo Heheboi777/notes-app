@@ -30,8 +30,7 @@
 <script>
 import axios from 'axios';
 
-// Use your backend URL (change to your Railway URL later)
-const API_BASE = 'http://localhost:3000/api/notes';
+const API_BASE = 'https://notes-app-production-b54e.up.railway.app/api/notes';
 
 export default {
   data() {
