@@ -39,22 +39,22 @@ Completed as a pre-task for the **Full Stack Web Developer Intern** position at 
 
 ### 1. Clone the repository
 ```bash```
-- git clone https://github.com/Heheboi777/notes-app.git
-- cd notes-app
+1. git clone https://github.com/Heheboi777/notes-app.git
+2. cd notes-app
 
 ### 2. Backend Setup
 
-- cd backend
-- npm install
-- node app.js
+1. cd backend
+2. npm install
+3. node app.js
 
 Server runs on http://localhost:3000
 
 ### 3. Frontend Setup
 
-- cd frontend
-- npm install
-- npm run dev
+1. cd frontend
+2. npm install
+3. npm run dev
 
 App runs on http://localhost:5173
 
