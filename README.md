@@ -38,7 +38,7 @@ Completed as a pre-task for the **Full Stack Web Developer Intern** position at 
 - npm (comes with Node.js)
 
 ### 1. Clone the repository
-```bash
+```bash```
 git clone https://github.com/Heheboi777/notes-app.git
 cd notes-app
 
