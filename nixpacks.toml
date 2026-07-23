@@ -1,8 +1,11 @@
 [phases.setup]
-nixPkgs = ["nodejs_18"]
+nixPkgs = ["nodejs_18", "python3", "make", "gcc"]
 
 [phases.install]
-cmds = ["npm install --prefix backend"]
+cmds = [
+  "npm install --prefix backend",
+  "npm rebuild --prefix backend sqlite3"
+]
 
 [phases.start]
 cmd = "node backend/app.js"
